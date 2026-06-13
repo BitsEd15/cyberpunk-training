@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/promotion.css">
     <link rel="stylesheet" href="./styles/offfer.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/popup.css">
 </head>
 
 <body>
@@ -108,6 +109,43 @@
             </div>
         </footer>
     </main>
+
+    <section class="popup">
+        <div class="popup__back-img"></div>
+        <img class="popup__svg" src="./img/popup/popup-svg.svg" alt="">
+        <div class="popup__container">
+            <div class="popup__imgs">
+                <img class="popup__imgs-img-m" src="./img/popup/xboxMobile.png" alt="">
+                <img class="popup__imgs-img-m" src="./img/popup/psMobile.png" alt="">
+                <img class="popup__imgs-img-t" src="./img/popup/xboxTablet.png" alt="">
+                <img class="popup__imgs-img-t" src="./img/popup/psTablet.png" alt="">
+                <img class="popup__imgs-img-pc" src="./img/popup/xbox-ps-PC.png" alt="">
+            </div>
+            <div class="popup__description">
+                <h3 class="popup__description-title">Играй и выигрывай!</h3>
+                <p class="popup__description-text">Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть
+                    консоль
+                    <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи
+                    скриншот о
+                    покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи!
+                </p>
+            </div>
+            <form class="popup__form">
+                <input class="popup__form-name" type="text" name="name" id="name" placeholder="Как тебя зовут?">
+                <input class="popup__form-email" type="email" name="email" id="email" placeholder="Твой e-mail">
+                <input class="popup__form-file-input" type="file" id="file" name="image"
+                    accept=".pdf, application/pdf, .png, image/png, .jpg, .jpeg, image/jpeg">
+                <label class="popup__form-file-label" for="file">Прикрепить скриншот</label>
+                <button class="g-button g-button--popup">Отправить</button>
+                <label class="popup__form-checkbox-label">
+                    <input type="checkbox" name="checkbox" class="popup__form-checkbox">
+                    <span class="popup__form-checkbox-custom"></span>
+                    Согласен на обработку персональных данных
+                </label>
+            </form>
+        </div>
+        <div class="popup__back-img2"></div>
+    </section>
     <script src="index.js"></script>
 </body>
 
