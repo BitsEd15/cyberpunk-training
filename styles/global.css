@@ -1,0 +1,22 @@
+.g-container{
+    max-width: 1944px;
+    padding: 0 12px;
+    margin: 0 auto;
+}
+.g-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    max-width: 244px;
+    height: 60px;
+    background-color: var(--black);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #f8f200;
+    white-space: nowrap;
+    line-height: 200%;
+    cursor: pointer;
+}

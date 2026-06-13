@@ -1,0 +1,19 @@
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Archangelsk", sans-serif;
+    --yellow: #F8F200;
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #e5e5e5;
+    --hero-text: #777;
+    --span-text: #52bedc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--white);
+    overflow-x: hidden; 
+}
