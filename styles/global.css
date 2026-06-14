@@ -19,4 +19,13 @@
     white-space: nowrap;
     line-height: 200%;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+.g-button:hover{
+    background-color: var(--span-text);
+    color: var(--black);
+    border: none;
+}
+.g-button:active{
+    scale: 0.95;
 }
