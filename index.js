@@ -1,7 +1,8 @@
 const button = document.querySelectorAll('.button-click')
 let popup = document.querySelector('.popup')
-function popupOpen() {
-    // popup.style.setProperty('visibility','visible'); - вроде так можно, но не работает
+
+function popupOpen(event) {
+    event.stopPropagation(); // ВОТ ЭТА СТРОКА ВАЖНА
     popup.classList.toggle('active-button');
 }
 
@@ -15,3 +16,10 @@ function close(e) {
     }
 }
 document.addEventListener('keydown', close)
+
+function closeOnClick(event) {
+    if (!popup.contains(event.target)) {
+        popup.classList.remove('active-button');
+    }
+}
+document.addEventListener('click', closeOnClick)
